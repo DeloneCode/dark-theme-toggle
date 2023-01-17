@@ -18,6 +18,7 @@ const Name = styled.h1`
 
 const Info = styled.p`
 margin: 1rem;
+color: ${(props) => props.theme.subtitle};
 `;
 
 const theme = {
