@@ -27,12 +27,14 @@ const darkTheme = {
 body: "#1C1C1C",
 title: "#fff",
 subtitle: "#b6b6b6",
+icon: "#b6b6b6",
 };
 
 const lightTheme = {
 body: "#fff",
 title: "#1c1c1c",
-subtitle: "#333" 
+subtitle: "#333",
+icon: "#1c1c1c",
 
 };
 
