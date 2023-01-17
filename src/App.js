@@ -9,7 +9,7 @@ const StyledApp = styled.div`
   min-height: 100vh;
   text-align: center;
   padding-top: 10rem;
-  backgroundColor: ${(props) => props.theme.body};
+  background-color: ${(props) => props.theme.body};
 `;
 
 const Name = styled.h1`
