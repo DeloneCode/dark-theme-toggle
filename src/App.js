@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import MoonIcon from "./components/icons/MoonIcon";
+import SunIcon from "./components/icons/SunIcon";
+import Switch from "./components/Switch";
+
+const style = {
+  minHeight: "100vh",
+  textAlign: "center",
+  paddingTop: "10rem",
+  backgroundColor: "#f5f5f5",
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={style}>
+      <SunIcon />
+      <Switch />
+      <MoonIcon />
+      <h1>Jim Naysium</h1>
+      <p>Username: jimnays10</p>
+      <p>Email: jim@gmail.com</p>
     </div>
   );
 }
