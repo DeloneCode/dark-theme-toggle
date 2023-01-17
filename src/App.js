@@ -3,6 +3,7 @@ import MoonIcon from "./components/icons/MoonIcon";
 import SunIcon from "./components/icons/SunIcon";
 import Switch from "./components/Switch";
 import { ThemeProvider } from 'styled-components'
+import { useState } from 'react';
 
 
 const StyledApp = styled.div`
@@ -36,11 +37,21 @@ subtitle: "#333"
 };
 
 function App() {
+const [theme, setTheme] = useState("dark");
+const isDarkTheme = theme === "dark";
+
+const toggleTheme = () => {
+  setTheme(isDarkTheme ? "light" : "dark");
+
+};
+
+
+  
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
     <StyledApp >
       <SunIcon />
-      <Switch />
+      <Switch toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       <MoonIcon />
       <Name>Code Delone</Name>
       <Info>Email: delonecode@gmail.com</Info>
