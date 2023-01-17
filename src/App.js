@@ -21,7 +21,7 @@ margin: 1rem;
 color: ${(props) => props.theme.subtitle};
 `;
 
-const theme = {
+const darkTheme = {
 body: "#1c1c1c",
 title: "#fff",
 subtitle: "#b6b6b6",
@@ -30,7 +30,7 @@ subtitle: "#b6b6b6",
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme}>
     <StyledApp >
       <SunIcon />
       <Switch />
