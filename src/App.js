@@ -11,14 +11,22 @@ const StyledApp = styled.div`
   backgroundColor: "#f5f5f5",
 `;
 
+const Name = styled.h1`
+ margin: 1rem;
+`;
+
+const Info = styled.p`
+margin: 1rem;
+`;
+
 function App() {
   return (
     <StyledApp >
       <SunIcon />
       <Switch />
       <MoonIcon />
-      <h1>Code Delone</h1>
-      <p>Email: delonecode@gmail.com</p>
+      <Name>Code Delone</Name>
+      <Info>Email: delonecode@gmail.com</Info>
     </StyledApp>
   );
 }
